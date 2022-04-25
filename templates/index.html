@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stock</title>
+</head>
+<body background="https://img.wantgoo.com/WantGooFiles/UpdateFiles/98845/9f65905a-af35-4858-9012-66c3ce031620.jpg"
+ style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-attachment: fixed;">
+    <h1>台股查詢</h1>
+        <h1>Your stock is: {{number}}</h1>
+
+<font>資料日期:{{day}}</font>
+<table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+  <tr>
+    <th><font size="5">股票代號</font></th>
+    <th><font size="5">開盤價</font></th>
+    <th><font size="5">最高價</font></th>
+    <th><font size="5">最低價</font></th>
+    <th><font size="5">收盤價</font></th>
+    <th><font size="5">漲幅</font></th>
+  </tr>
+  <tr>
+    <td><font size="5">{{number}}</font></td>
+    <td><font size="5">{{data['open']}}</font></td>
+    <td><font size="5">{{data['high']}}</font></td>
+    <td><font size="5">{{data['low']}}</font></td>
+    <td><font size="5">{{data['close']}}</font></td>
+    <td><font size="5">{{data['dailyReturn']}}</font></td>  
+  </tr>
+</table>
+<br />
+<br />
+<div id="results"></div>
+<a href="/">回查詢</a>
+
+</body>
+</html>

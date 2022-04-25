@@ -1,0 +1,8 @@
+Flask
+firebase_admin
+bs4
+requests
+line-bot-sdk
+selenium
+retrying
+webdriver_manager
